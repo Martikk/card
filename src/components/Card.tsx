@@ -6,15 +6,17 @@ import {CardButton} from "./Button.styled";
 
 function Card () {
 return (
-    <BoxCard>
-        <CardImage src={cardimage} alt = "sahara"/>
-        <CardTitle>Headline</CardTitle>
-        <CardDescription>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</CardDescription>
-        <ButtonBox>
-            <CardButton typeBtn={"more"}>See more</CardButton>
-            <CardButton typeBtn={"save"}>Save</CardButton>
-        </ButtonBox>
-    </BoxCard>
+    <>
+        <BoxCard>
+            <CardImage src={cardimage} alt = "sahara"/>
+            <CardTitle>Headline</CardTitle>
+            <CardDescription>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</CardDescription>
+            <ButtonBox>
+                <CardButton typeBtn={"more"}>See more</CardButton>
+                <CardButton typeBtn={"save"}>Save</CardButton>
+            </ButtonBox>
+        </BoxCard>
+    </>
 )
 }
 
@@ -31,6 +33,7 @@ const BoxCard = styled.div`
     box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.10);
     width: 300px;
     height: 350px;
+
 `
 
 const CardTitle = styled.h3`
